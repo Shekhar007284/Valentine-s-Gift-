@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Valentine Surprise 💖</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<div class="hero">
+<h1>💘 Valentine Surprise 💘</h1>
+<p>Create a cute Valentine message & share it 💌</p>
+
+
+<form id="valentineForm">
+<input type="text" id="from" placeholder="Your Name" required />
+<input type="text" id="to" placeholder="Crush / Partner Name" required />
+<button type="submit">Generate Love ❤️</button>
+</form>
+
+
+<div id="result" class="hidden">
+<h2 id="message"></h2>
+<button onclick="shareWhatsApp()">📲 Share on WhatsApp</button>
+<button onclick="copyLink()">🔗 Copy Link</button>
+</div>
+</div>
+
+
+<canvas id="confetti"></canvas>
+
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+<source src="https://assets.mixkit.co/music/preview/mixkit-romantic-love-168.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="script.js"></script>
+</body>
+</html>
