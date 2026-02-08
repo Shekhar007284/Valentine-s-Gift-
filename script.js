@@ -74,4 +74,18 @@ setTimeout(() => heart.remove(), 2000);
 }
 });
 }, 20);
+}}, 20);
+
+
+// Instagram-style floating hearts
+for (let i = 0; i < 12; i++) {
+const heart = document.createElement('div');
+heart.className = 'heart';
+heart.innerText = '❤️';
+heart.style.left = Math.random() * 80 + 10 + '%';
+document.body.appendChild(heart);
+setTimeout(() => heart.remove(), 2000);
+}
+});
+}, 20);
   }
