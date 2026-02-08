@@ -1,5 +1,52 @@
 <!DOCTYPE html>
-lang="en">
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Valentine 💖</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen" class="hero">
+<h1>❤️ The Vault ❤️</h1>
+<p>Enter your special date to unlock</p>
+<input type="password" id="secret" placeholder="DDMMYYYY" />
+<button onclick="unlockLove()">🔐 Unlock</button>
+<p class="hint">Hint: Your special day 😉</p>
+</div>
+
+
+<!-- LOVE PAGE -->
+<div id="lovePage" class="hero hidden">
+<h1 id="loveTitle">💖 Our Love Story 💖</h1>
+<p class="story">
+From the moment our paths crossed, something magical began ✨<br><br>
+Every smile, every laugh, every memory with you means the world to me 💕<br><br>
+This is just a small reminder of how special you are 💌
+</p>
+
+
+<button onclick="shareWhatsApp()">📲 Share on WhatsApp</button>
+</div>
+
+
+<canvas id="confetti"></canvas>
+
+
+<audio id="bgMusic" loop>
+<source src="https://assets.mixkit.co/music/preview/mixkit-romantic-love-168.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
